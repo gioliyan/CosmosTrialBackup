@@ -91,6 +91,16 @@ public class Ship_Controller : MonoBehaviour
             stats.currentHealth -= collision.transform.GetComponent<Enemy_Ship>().stats.damage;
 
         }
+
+        if (collision.gameObject.tag == "EnergyCargo")
+        {
+            stats.currentHealth += 30;
+            if (stats.currentHealth > 100)
+            {
+                stats.currentHealth = 100;
+            }
+
+        }
         
     }
 

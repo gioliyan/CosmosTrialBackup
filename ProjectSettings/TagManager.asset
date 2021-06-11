@@ -15,6 +15,7 @@ TagManager:
   - TotalPoin
   - Gate
   - PauseMenu
+  - EnergyCargo
   layers:
   - Default
   - TransparentFX
